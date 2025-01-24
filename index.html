@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица с числами</title>
+    <style>
+        /* Убираем двойные границы между ячейками и добавляем отступ сверху и снизу */
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        /* Стили для ячеек таблицы: границы, отступы, выравнивание и фиксированная ширина */
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 40px;
+        }
+        /* Класс для окрашивания ячеек с числами >= 50 в оранжевый цвет */
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- Таблица для отображения случайных чисел -->
+    <table id="numberTable"></table>
+    <!-- Кнопка для добавления нового случайного числа -->
+    <button onclick="addNumber()">Добавить число</button>
+    <!-- Подключаем файл с JavaScript кодом -->
+    <script src="KT_1.js"></script>
+</body>
+</html>
